@@ -1,1 +1,17 @@
-@mixin hoge() {}
+@mixin borderBox() {
+  border-top: 1px solid $white-color-01;
+  border-bottom: 1px solid $white-color-01;
+  box-sizing: border-box;
+}
+@mixin commonTitle() {
+  text-align: center;
+  margin-bottom: .5rem;
+  font-size: .8rem;
+}
+@mixin commonTag() {
+  background-color: $white-color-01;
+  text-align: center;
+  padding: .1rem 0;
+  color: $black-color-01;
+  font-size: .7rem;
+}
