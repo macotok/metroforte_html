@@ -30,6 +30,9 @@
     @include commonTag();
   }
 }
+.m-box-05 {
+  background-color: $white-color-01;
+}
 .m-title-01 {
   margin-bottom: 3rem;
 }
@@ -76,5 +79,49 @@
     border-bottom: 1px solid $black-color-01;
     text-align: center;
     padding: 2rem 0;
+  }
+}
+.m-contact-01 {
+  margin-bottom: 8rem;
+  &-input {
+    border: 1px solid $black-color-01;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+  }
+  &-textarea {
+    border: 1px solid $black-color-01;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1rem;
+    margin: .3rem 0 2rem;
+    resize: none;
+  }
+  &-button {
+    border: 1px solid $black-color-01;
+    display: block;
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin: 0 auto;
+    background-color: $black-color-01;
+    color: $white-color-01;
+    transition: all ease .5s;
+    &:hover {
+      cursor: pointer;
+      color: $black-color-01;
+      background-color: $white-color-01;
+    }
+  }
+}
+.m-footer-01 {
+  background-color: $black-color-01;
+  text-align: center;
+  &-text {
+    color: $white-color-01;
   }
 }
