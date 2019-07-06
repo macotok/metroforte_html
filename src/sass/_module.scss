@@ -6,16 +6,17 @@
   background-position: top center;
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .m-box-02 {
-  background-color: $black-color-01;
+  position: relative;
+  margin-top: -210px;
+  z-index: z(business);
 }
 .m-box-03 {
   background-color: $white-color-01;
 }
 .m-box-04 {
-  background-color: $black-color-01;
   color: $white-color-01;
   &-inner {
     @include borderBox();
@@ -118,7 +119,6 @@
   }
 }
 .m-footer-01 {
-  background-color: $black-color-01;
   text-align: center;
   &-text {
     color: $white-color-01;
@@ -132,7 +132,39 @@
   width: 80px;
   height: 100%;
   text-align: center;
+  z-index: z(side);
   &-item {
     margin-bottom: 10px;
+  }
+}
+.m-diagonal-01 {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 73%;
+    margin: 3% -10% 0;
+    background-color: $black-color-01;
+    transform-origin: right center;
+    transform: rotate(-6deg);
+    z-index: -1;
+  }
+  &.m-footer-01 {
+    &::before {
+      height: 100%;
+    }
+  }
+  &-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 100px 0 120px;
+    text-align: center;
   }
 }

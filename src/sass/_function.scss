@@ -1,7 +1,8 @@
 $z-map: (
-  null,
+  visual,
+  business,
+  side,
 );
-
 @function z($name) {
   @return index($z-map, $name);
 }
