@@ -36,14 +36,29 @@
 }
 .m-title-01 {
   margin-bottom: 3rem;
+  &-img {
+    max-width: 100%;
+  }
 }
 .m-title-02 {
   text-align: right;
   margin-bottom: 3rem;
+  &-img {
+    max-width: 100%;
+  }
 }
 .m-title-03 {
   text-align: center;
   margin-bottom: 3rem;
+  &-img {
+    max-width: 100%;
+  }
+}
+.m-title-04 {
+  margin-bottom: 3rem;
+  &-img {
+    max-width: 100%;
+  }
 }
 .m-list-01 {
   display: flex;
@@ -52,7 +67,7 @@
   &-item {
     width: 23%;
     @include borderBox();
-    padding: 2rem .5rem 3rem;
+    padding: 2rem 1rem 3rem;
   }
   &-title {
     @include commonTitle();
@@ -63,6 +78,7 @@
   }
   &-text {
     font-size: 1.1rem;
+    text-align: left;
   }
 }
 .m-list-02 {
@@ -73,7 +89,8 @@
   }
   &-photo {
     max-width: 100%;
-    margin-bottom: 2rem;
+    margin: 0 auto 4rem;
+    display: block;
   }
   &-inner {
     border-top: 1px solid $black-color-01;
