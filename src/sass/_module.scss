@@ -124,3 +124,15 @@
     color: $white-color-01;
   }
 }
+.m-side-01 {
+  background: $black-color-01;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  &-item {
+    margin-bottom: 10px;
+  }
+}
