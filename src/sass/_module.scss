@@ -1,3 +1,39 @@
+.m-header-01 {
+  background-color: $black-color-01;
+  position: fixed;
+  top: 0;
+  z-index: z(header);
+  width: 100%;
+  height: 80px;
+  display: none;
+}
+.m-nav-01 {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 1;
+  &-icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+  }
+  &-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: $white-color-01;
+    &:nth-of-type(2) {
+      top: 10px;
+    }
+    &:nth-of-type(3) {
+      top: 20px;
+    }
+  }
+}
+
 .m-box-01 {
   text-align: center;
   padding: 10rem 0 30rem;

@@ -2,6 +2,9 @@
   .m-side-01 {
     display: none;
   }
+  .m-header-01 {
+    display: block;
+  }
   .l-container-01 {
     width: 100%;
     padding: 0 3rem;
@@ -50,6 +53,4 @@
       }
     }
   }
-}
-@media screen and (max-width: 479px) {
 }

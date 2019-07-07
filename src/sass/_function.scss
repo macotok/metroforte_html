@@ -2,6 +2,7 @@ $z-map: (
   visual,
   business,
   side,
+  header,
 );
 @function z($name) {
   @return index($z-map, $name);
