@@ -5,13 +5,7 @@ html(lang="ja")
     title タイトル
     link(rel='stylesheet', href="../css/style.css")
   body
-    header.m-header-01
-      img.m-header-01-logo(src="../assets/images/logo/01.svg", width=100, alt="METRO FORTE")
-      .m-nav-01
-        .m-nav-01-icon
-          .m-nav-01-border
-          .m-nav-01-border
-          .m-nav-01-border
+    include _include/header
     main
       .m-box-01
         h1
@@ -86,5 +80,6 @@ html(lang="ja")
         footer
           p.m-footer-01-text &copy; metroforte inc.
     include _include/side
+    include _include/drawer
     script(src="../js/app.js", type="text/javascript")
 
