@@ -1,5 +1,4 @@
 const AutoPrefixer = require('autoprefixer');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const globule = require('globule');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -116,7 +115,6 @@ const app = {
   },
   devtool: 'source-map',
   plugins: [
-    new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, 'src/assets/images/'),
