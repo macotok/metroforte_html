@@ -6,6 +6,10 @@
   width: 100%;
   height: 80px;
   display: none;
+  &-logo {
+    display: block;
+    margin: 1rem 0 0 1.5rem;
+  }
 }
 .m-nav-01 {
   position: absolute;
@@ -145,28 +149,30 @@
 .m-box-05 {
   background-color: $white-color-01;
 }
+.m-title-01,
+.m-title-02,
+.m-title-03,
+.m-title-04 {
+  margin-bottom: 4rem;
+}
 .m-title-01 {
-  margin-bottom: 3rem;
   &-img {
     max-width: 100%;
   }
 }
 .m-title-02 {
   text-align: right;
-  margin-bottom: 3rem;
   &-img {
     max-width: 100%;
   }
 }
 .m-title-03 {
   text-align: center;
-  margin-bottom: 3rem;
   &-img {
     max-width: 100%;
   }
 }
 .m-title-04 {
-  margin-bottom: 3rem;
   &-img {
     max-width: 100%;
   }

@@ -10,6 +10,9 @@
     padding: 0 3rem;
     box-sizing: border-box;
   }
+  .m-box-01 {
+   padding: 30rem 0 40rem;
+  }
   .m-list-01 {
     flex-wrap: wrap;
     padding: 0 3rem;
@@ -29,18 +32,38 @@
   .m-title-04 {
     text-align: center;
   }
+  .m-title-01,
+  .m-title-03 {
+    &-img {
+      width: 70%;
+    }
+  }
   .m-title-02,
-  .m-title-03,
   .m-title-04 {
     &-img {
-      width: 60%;
+      width: 50%;
     }
+  }
+  .m-diagonal-01 {
+    &.m-box-02 {
+      padding: 5rem 0 10rem;
+    }
+    &-inner {
+      .m-box-02 & {
+        padding: 10rem 0 30rem;
+      }
+    }
+  }
+  .m-box-03 {
+    margin-top: -18rem;
   }
 }
 @media screen and (max-width: 768px) {
   .m-list-01 {
+    padding: 0 4rem;
     &-item {
       width: 100%;
+      margin-bottom: 4rem;
     }
   }
   .m-list-02 {
@@ -52,5 +75,37 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+@media screen and (max-width: 479px) {
+  .m-diagonal-01 {
+    padding: 5rem 0 10rem;
+    &::before {
+      width: 200%;
+      margin: 3% -20% 0;
+    }
+    &.m-box-02 {
+      padding: 0 0 10rem;
+    }
+    &-inner {
+      padding: 5rem 0;
+    }
+  }
+  .m-box-03 {
+    margin: -22rem 0 7rem;
+  }
+  .m-box-04 {
+    &-inner {
+      width: 70%;
+      padding: 3rem 1rem;
+    }
+  }
+  .m-title-01 {
+    &-img {
+      width: 100%;
+    }
+  }
+  .m-list-01 {
+    padding: 0 2rem;
   }
 }
