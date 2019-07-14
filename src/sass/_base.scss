@@ -5,6 +5,9 @@ body {
   color: $black-color-01;
   font-size: 14px;
   font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+  &.noScroll {
+    overflow: hidden;
+  }
 }
 main {
   overflow: hidden;
