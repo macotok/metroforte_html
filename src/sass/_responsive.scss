@@ -7,7 +7,7 @@
   }
   .l-container-01 {
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 3rem 10rem;
     box-sizing: border-box;
   }
   .m-box-01 {
@@ -45,17 +45,9 @@
     }
   }
   .m-diagonal-01 {
-    &.m-box-02 {
-      padding: 5rem 0 10rem;
-    }
     &-inner {
-      .m-box-02 & {
-        padding: 10rem 0 30rem;
-      }
+      padding: 5rem 0;
     }
-  }
-  .m-box-03 {
-    margin-top: -18rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -79,16 +71,9 @@
 }
 @media screen and (max-width: 479px) {
   .m-diagonal-01 {
-    padding: 5rem 0 10rem;
     &::before {
       width: 200%;
-      margin: 3% -20% 0;
-    }
-    &.m-box-02 {
-      padding: 0 0 10rem;
-    }
-    &-inner {
-      padding: 5rem 0;
+      margin: 0 -20% 0;
     }
   }
   .m-box-03 {

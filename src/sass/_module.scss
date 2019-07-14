@@ -125,7 +125,7 @@
   z-index: z(whiteBg);
   &::after {
     content: "";
-    background-color: $white-color-01;
+    background-color: red;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -152,14 +152,15 @@
   z-index: z(business);
 }
 .m-box-03 {
-  background-color: $white-color-01;
   position: relative;
   z-index: z(works);
+  margin-top: -23rem;
 }
 .m-box-04 {
   color: $white-color-01;
   position: relative;
   z-index: z(company);
+  margin-top: -32rem;
   &-inner {
     @include borderBox();
     padding: 2rem .5rem 2rem;
@@ -174,9 +175,9 @@
   }
 }
 .m-box-05 {
-  background-color: $white-color-01;
   position: relative;
   z-index: z(contact);
+  margin-top: -16rem;
 }
 .m-title-01,
 .m-title-02,
@@ -286,6 +287,7 @@
   text-align: center;
   position: relative;
   z-index: z(footer);
+  margin-top: -38rem;
   &-text {
     color: $white-color-01;
   }
@@ -316,7 +318,7 @@
 .m-diagonal-01 {
   position: relative;
   overflow: hidden;
-  padding: 10rem 0;
+  padding: 10rem 0 20rem;
   &::before {
     content: '';
     position: absolute;
@@ -324,11 +326,20 @@
     left: 0;
     width: 120%;
     height: 73%;
-    margin: 3% -10% 0;
+    margin: 0 -10% 0;
     background-color: $black-color-01;
     transform-origin: right center;
     transform: rotate(-4deg);
     z-index: -1;
+  }
+  &.m-box-04 {
+    padding-bottom: 5rem;
+  }
+  &.m-box-03,
+  &.m-box-05 {
+    &::before {
+      background-color: $white-color-01;
+    }
   }
   &.m-footer-01 {
     padding: 5rem 0 0;
@@ -341,6 +352,6 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 }
