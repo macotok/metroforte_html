@@ -1,2 +1,5 @@
-const test = 'Hello World';
-console.log(test);
+import pageLink from './pageLink';
+
+window.onload = () => {
+  pageLink();
+};
