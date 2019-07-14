@@ -125,7 +125,7 @@
   z-index: z(whiteBg);
   &::after {
     content: "";
-    background-color: red;
+    background-color: $white-color-01;
     width: 100%;
     height: 100%;
     position: absolute;

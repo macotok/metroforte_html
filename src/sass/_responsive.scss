@@ -7,8 +7,11 @@
   }
   .l-container-01 {
     width: 100%;
-    padding: 0 3rem 10rem;
+    padding: 0 3rem 20rem;
     box-sizing: border-box;
+    .m-box-03 & {
+      padding-bottom: 60rem;
+    }
   }
   .m-box-01 {
    padding: 30rem 0 40rem;
@@ -44,10 +47,11 @@
       width: 50%;
     }
   }
-  .m-diagonal-01 {
-    &-inner {
-      padding: 5rem 0;
-    }
+  .m-box-03 {
+    margin-top: -38rem;
+  }
+  .m-box-04 {
+    margin-top: -77rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -75,9 +79,6 @@
       width: 200%;
       margin: 0 -20% 0;
     }
-  }
-  .m-box-03 {
-    margin: -22rem 0 7rem;
   }
   .m-box-04 {
     &-inner {
