@@ -42,16 +42,23 @@
 }
 .m-nav-02 {
   &-list {
-    padding-top: 8rem;
-    text-align: center;
+    padding: 4rem 16rem 0;
   }
   &-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    &:nth-of-type(2) {
+      text-align: right;
+    }
+    &:nth-of-type(3) {
+      padding-left: 30rem;
+    }
   }
   &-link {
     text-decoration: none;
     color: $white-color-01;
-    font-size: 4rem;
+    font-size: 10rem;
+    line-height: 1.2;
+    @include hoverLink();
   }
 }
 .m-nav-03 {

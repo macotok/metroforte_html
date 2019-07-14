@@ -53,6 +53,24 @@
   .m-box-04 {
     margin-top: -77rem;
   }
+  .m-nav-02 {
+    &-list {
+      text-align: center;
+      padding: 12rem 4rem 0;
+    }
+    &-item {
+      margin-bottom: 2rem;
+      &:nth-of-type(2) {
+        text-align: center;
+      }
+      &:nth-of-type(3) {
+        padding-left: 0;
+      }
+    }
+    &-link {
+      font-size: 4rem;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .m-list-01 {
