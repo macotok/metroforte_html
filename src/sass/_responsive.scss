@@ -45,7 +45,7 @@
     }
   }
   .m-box-03 {
-    margin-top: -38rem;
+    margin-top: -39rem;
   }
   .m-box-04 {
     margin-top: -77rem;
@@ -85,6 +85,12 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+  .m-box-01 {
+    &-movie {
+      min-height: 110%;
+      height: 110%;
     }
   }
 }
