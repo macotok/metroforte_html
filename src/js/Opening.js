@@ -9,6 +9,7 @@ class Opening {
     this.headerElement = document.querySelector('.m-header-01');
     this.visualElement = document.querySelector('.m-box-01');
     this.marginElement = document.querySelector('.m-box-02');
+    this.companyElement = document.querySelector('.m-box-04');
     this.activeClassName = 'active';
     this.event();
     this.setHeight();
@@ -28,6 +29,7 @@ class Opening {
     const heightWindow = window.innerHeight || document.documentElement.clientHeight;
     this.visualElement.style.height = `${heightWindow}px`;
     this.marginElement.style.marginTop = `${heightWindow}px`;
+    this.companyElement.style.marginTop = `${heightWindow}px`;
   }
 }
 
