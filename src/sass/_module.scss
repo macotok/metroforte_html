@@ -146,12 +146,13 @@
   }
 }
 .m-box-01 {
-  text-align: center;
-  padding: 20rem 0 40rem;
   background-image: url("../assets/images/bg/01.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   position: fixed;
