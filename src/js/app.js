@@ -11,5 +11,8 @@ window.onload = () => {
   // pageLink();
   setTimeout(() => {
     $('.fn-listAnimation').addClass('active');
-  }, 500);
+  }, 0);
+  setTimeout(() => {
+    $('.fn-listAnimation').addClass('active2');
+  }, 1000);
 };
