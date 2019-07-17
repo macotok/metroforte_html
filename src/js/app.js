@@ -1,18 +1,14 @@
 import Drawer from './Drawer';
-import Opening from './Opening';
+import ElementAnimation from './ElementAnimation';
+import SettingLayout from './SettingLayout';
 import pageLink from './pageLink';
-import $ from 'jquery';
 
 window.onload = () => {
-  // const drawer = new Drawer();
-  // drawer.openDrawer();
-  // const opening = new Opening();
-  // opening.event();
-  // pageLink();
-  setTimeout(() => {
-    $('.fn-listAnimation').addClass('active');
-  }, 0);
-  setTimeout(() => {
-    $('.fn-listAnimation').addClass('active2');
-  }, 1000);
+  const drawer = new Drawer();
+  drawer.openDrawer();
+  const elementAnimation = new ElementAnimation();
+  elementAnimation.getPositionToBlock();
+  const settingLayout = new SettingLayout();
+  settingLayout.event();
+  pageLink();
 };

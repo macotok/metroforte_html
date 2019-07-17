@@ -1,7 +1,6 @@
-// import ResizeWindow from './ResizeWindow';
 import ScrollWindow from './ScrollWindow';
 
-class Opening {
+class SettingLayout {
   constructor() {
     this.scrollWindow = new ScrollWindow();
     this.sideElement = document.querySelector('.m-side-01');
@@ -29,4 +28,4 @@ class Opening {
   }
 }
 
-export default Opening;
+export default SettingLayout;

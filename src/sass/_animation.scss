@@ -28,20 +28,20 @@
     transform: translate3d(0, 100%, 0);
     transition: 1s cubic-bezier(.75, 0, .175, 1);
   }
-  &.active {
+  &.startAnimation {
     &::before {
       transform: translate3d(0, 0, 0);
     }
   }
-  &.active2 {
+  &.endAnimation {
     &::before {
       transform: translate3d(0, 100%, 0);
     }
   }
   &-item {
     opacity: 0;
-    .fn-listAnimation & {
-      animation: fadeInUp 1s ease 1.5s 1 both;
+    &.active {
+      animation: fadeInUp 1s ease .5s 1 both;
     }
   }
 }
