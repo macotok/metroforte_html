@@ -65,6 +65,14 @@
     transform: translate3d(0, 0, 0);
   }
 }
+@keyframes zoomOut {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;

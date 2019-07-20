@@ -133,6 +133,10 @@
   }
 }
 .m-box-01 {
+  background-image: url("../assets/images/bg/01.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,16 +145,11 @@
   position: fixed;
   top: 0;
   z-index: z(visual);
-  &-movie {
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-  }
+  animation-name: zoomOut;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
   &-logo {
     position: relative;
     z-index: 2;
