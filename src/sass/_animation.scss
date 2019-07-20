@@ -24,13 +24,13 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background-color: $white-color-01;
+    background-color: #dedede;
     transform: translate3d(0, 100%, 0);
     transition: 1s cubic-bezier(.75, 0, .175, 1);
   }
   &.startAnimation {
     &::before {
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 20%, 0);
     }
   }
   &.endAnimation {
