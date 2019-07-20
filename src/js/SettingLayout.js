@@ -23,7 +23,7 @@ class SettingLayout {
   setHeight() {
     const heightWindow = window.innerHeight || document.documentElement.clientHeight;
     this.visualElement.style.height = `${heightWindow}px`;
-    this.marginElement.style.marginTop = `${heightWindow}px`;
+    this.marginElement.style.marginTop = `${heightWindow - 80}px`;
     this.companyElement.style.marginTop = `${heightWindow / 3}px`;
   }
 }

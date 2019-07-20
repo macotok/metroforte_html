@@ -133,23 +133,24 @@
   }
 }
 .m-box-01 {
-  background-image: url("../assets/images/bg/01.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  z-index: z(visual);
-  animation-name: zoomOut;
-  animation-duration: 10s;
-  animation-fill-mode: both;
-  animation-delay: 0s;
-  animation-timing-function: ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: z(visual);
+  &-bg {
+    background-size: cover;
+    animation-name: zoomOut;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    position: absolute;
+    z-index: 1;
+  }
   &-logo {
     position: relative;
     z-index: 2;
