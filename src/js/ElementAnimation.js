@@ -1,10 +1,13 @@
 import $ from 'jquery';
+import judgeDevice from './judgeDevice';
 
 class ElementAnimation {
   constructor() {
     this.$targetElement = $('.fn-listAnimation');
     this.$targetItemtElement = $('.fn-listAnimation-item');
+    this.$targetItemtElement02 = $('.fn-listAnimation-item-02');
     this.targetElementPosition = [];
+    this.targetElementPosition02 = [];
     this.observeTime = 200;
     this.controlPosition = 700;
     this.setTimeAnimation = 1000;
@@ -13,6 +16,9 @@ class ElementAnimation {
   getPositionToBlock() {
     for (let i = 0; i < this.$targetElement.length; i += 1) {
       this.targetElementPosition.push(this.$targetElement.eq(i).offset().top);
+    }
+    for (let i = 0; i < this.$targetItemtElement02.length; i += 1) {
+      this.targetElementPosition02.push(this.$targetItemtElement02.eq(i).offset().top);
     }
     this.eventScroll();
     this.resizeWindow();
@@ -38,6 +44,14 @@ class ElementAnimation {
       }
       return false;
     });
+    if (judgeDevice()) {
+      this.targetElementPosition02.filter((t, index) => {
+        if (t <= scrollTopPosition + this.controlPosition) {
+          this.$targetItemtElement02.eq(index).addClass('active');
+        }
+        return false;
+      });
+    }
   }
 
   eventAnimation(targetElement) {
@@ -49,6 +63,7 @@ class ElementAnimation {
       clearTimeout(this.observeResize);
       this.observeResize = setTimeout(() => {
         this.targetElementPosition = [];
+        this.targetElementPosition02 = [];
         this.getPositionToBlock();
       }, this.observeTime);
     }, false);
