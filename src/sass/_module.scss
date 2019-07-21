@@ -248,9 +248,27 @@
     display: block;
   }
   &-photo {
-    max-width: 100%;
-    margin: 0 auto 4rem;
-    display: block;
+    position: relative;
+    &-img {
+      max-width: 100%;
+      margin: 0 auto 4rem;
+      display: block;
+    }
+    &-text {
+      width: 180px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $black-color-01;
+      transform:skewX(15deg);
+      color: $white-color-01;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -25px 0 0 -90px;
+    }
   }
   &-inner {
     border-top: 1px solid $black-color-01;

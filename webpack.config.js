@@ -124,10 +124,6 @@ const app = {
         from: path.resolve(__dirname, 'src/assets/webfonts/'),
         to: path.resolve(__dirname, 'dist/assets/webfonts/'),
       },
-      {
-        from: path.resolve(__dirname, 'src/assets/media/'),
-        to: path.resolve(__dirname, 'dist/assets/media/'),
-      },
     ]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
