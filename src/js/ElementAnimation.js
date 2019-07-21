@@ -6,7 +6,7 @@ class ElementAnimation {
     this.$targetItemtElement = $('.fn-listAnimation-item');
     this.targetElementPosition = [];
     this.observeTime = 200;
-    this.controlPosition = 500;
+    this.controlPosition = 700;
     this.setTimeAnimation = 1000;
   }
 

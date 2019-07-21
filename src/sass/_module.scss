@@ -249,10 +249,25 @@
   }
   &-photo {
     position: relative;
+    overflow: hidden;
     &-img {
       max-width: 100%;
       margin: 0 auto 4rem;
       display: block;
+    }
+    &-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110%;
+      height: 100%;
+      transition: .3s linear;
+      opacity: 0;
+      transform: translateX(-30px);
+      &:hover {
+        opacity: 1;
+        transform: skewX(15deg) translateX(0);
+      }
     }
     &-text {
       width: 180px;
@@ -260,14 +275,28 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: $black-color-01;
-      transform:skewX(15deg);
+      background-color: $black-color-01;
+      transform: skewX(15deg);
       color: $white-color-01;
       text-decoration: none;
       position: absolute;
       top: 50%;
       left: 50%;
       margin: -25px 0 0 -90px;
+      span {
+        display: inline-block;
+        transform: skewX(-15deg);
+        &::after {
+          display: inline-block;
+          margin: 0 0 .2rem 1rem;
+          width: 4px;
+          height: 4px;
+          border-top: 2px solid $white-color-01;
+          border-right: 2px solid $white-color-01;
+          transform: rotate(45deg);
+          content: "";
+        }
+      }
     }
   }
   &-inner {

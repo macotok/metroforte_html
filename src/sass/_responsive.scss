@@ -101,6 +101,11 @@
       margin: 0 -20% 0;
     }
   }
+  .m-box-01 {
+    &-bg {
+      animation-duration: 10s;
+    }
+  }
   .m-box-04 {
     &-inner {
       width: 70%;
