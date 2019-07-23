@@ -143,7 +143,7 @@
     z-index: z(visual);
   &-bg {
     background-size: cover;
-    animation-name: zoomOut;
+    animation-name: zoomIn;
     animation-duration: 20s;
     animation-fill-mode: both;
     animation-delay: 0s;
@@ -259,7 +259,7 @@
       max-width: 100%;
       transform: scale(1.2);
       &.active {
-        animation-name: zoomOut;
+        animation-name: zoomIn;
         animation-duration: 8s;
         animation-fill-mode: both;
         animation-delay: 0s;
