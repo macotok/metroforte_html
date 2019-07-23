@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import judgeDevice from './judgeDevice';
 
 class ElementAnimation {
   constructor() {
@@ -44,14 +43,12 @@ class ElementAnimation {
       }
       return false;
     });
-    if (judgeDevice()) {
-      this.targetElementPosition02.filter((t, index) => {
-        if (t <= scrollTopPosition + this.controlPosition) {
-          this.$targetItemtElement02.eq(index).addClass('active');
-        }
-        return false;
-      });
-    }
+    this.targetElementPosition02.filter((t, index) => {
+      if (t <= scrollTopPosition + this.controlPosition) {
+        this.$targetItemtElement02.eq(index).addClass('active');
+      }
+      return false;
+    });
   }
 
   eventAnimation(targetElement) {
