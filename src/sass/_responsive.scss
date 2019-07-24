@@ -72,8 +72,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .m-box-01 {
+    &-movie {
+      min-height: 110%;
+      height: 110%;
+    }
+  }
+}
+@media screen and (max-width: 479px) {
   .m-list-01 {
-    padding: 0 4rem;
+    padding: 0 2rem;
     &-item {
       width: 100%;
       margin-bottom: 4rem;
@@ -89,23 +97,10 @@
       }
     }
   }
-  .m-box-01 {
-    &-movie {
-      min-height: 110%;
-      height: 110%;
-    }
-  }
-}
-@media screen and (max-width: 479px) {
   .m-diagonal-01 {
     &::before {
       width: 200%;
       margin: 0 -20% 0;
-    }
-  }
-  .m-box-01 {
-    &-bg {
-      animation-duration: 10s;
     }
   }
   .m-box-04 {
@@ -118,8 +113,5 @@
     &-img {
       width: 100%;
     }
-  }
-  .m-list-01 {
-    padding: 0 2rem;
   }
 }
