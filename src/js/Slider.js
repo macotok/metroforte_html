@@ -4,14 +4,19 @@ class Slider {
     this.active = 'active';
     this.random = Math.round(Math.random());
     this.activeNumber = null;
-    this.animationSpeed = 19000;
+    this.animationSpeed = 19500;
+    this.count = 1;
   }
 
   event() {
     if (this.slider.length) {
       this.slider[this.random].classList.add(this.active);
     }
-    setInterval(() => {
+    const slide = setInterval(() => {
+      if (this.count >= 3) {
+        clearInterval(slide);
+      }
+      this.count += 1;
       this.setAnimation();
       this.slider[this.activeNumber].classList.add(this.active);
     }, this.animationSpeed);
