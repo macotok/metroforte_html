@@ -1,7 +1,6 @@
 import Drawer from './Drawer';
 import ElementAnimation from './ElementAnimation';
 import SettingLayout from './SettingLayout';
-import Slider from './Slider';
 import pageLink from './pageLink';
 
 window.onload = () => {
@@ -12,6 +11,4 @@ window.onload = () => {
   const settingLayout = new SettingLayout();
   settingLayout.event();
   pageLink();
-  const slider = new Slider();
-  slider.event();
 };
