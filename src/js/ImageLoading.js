@@ -9,6 +9,8 @@ export default class ImageLoading {
     this.opening = document.querySelectorAll('.fn-opening');
     this.fadeOut = 'fadeOut';
     this.removeOpeningSpeed = 1000;
+    this.body = document.body;
+    this.noScroll = 'noScroll';
   }
 
   loadProgress() {
@@ -19,6 +21,7 @@ export default class ImageLoading {
       }).then((value) => {
         if (this.imagesLength <= value) {
           this.opening[0].classList.add(this.fadeOut);
+          this.body.classList.remove(this.noScroll);
           setTimeout(() => {
             this.opening[0].remove();
           }, this.removeOpeningSpeed);
